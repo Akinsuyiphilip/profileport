@@ -1,0 +1,114 @@
+:root{
+    --bgcolor: #02021a;
+--bordercolor: #00c6cd;
+--ashcolor: #B2BEB5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} 
+
+body{
+    cursor:cell;
+    background-color: var(--ashcolor) !important;
+    font-family: 'Poppins', sans-serif;
+
+    .navbar{
+        background-color: white;
+        border-bottom: .12rem solid black;
+        .navbar-brand{
+            color: var(--bgcolor);
+           
+        }
+        .btn-secondary{
+            color: #fff;
+            border-color: #fff;
+            background-color: var(--ashcolor);
+            &:hover{
+                border-color: rgb(109, 194, 255);
+                background-color: var(--bgcolor);
+                box-shadow: 5px 3px 10px rgba(2, 33, 61, 0.59);
+            }
+
+        }
+        .nav-link{
+            color: black;
+
+            &:hover{
+                color: var(--ashcolor);
+                border: .1rem solid #000;
+                box-shadow: 5px 3px 10px rgba(2, 33, 61, 0.59);
+            }
+           
+        }
+        .active{
+            color: var(--bordercolor);
+        }
+    }
+
+
+.load{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8rem 9rem 8rem 6rem;
+    .profile{
+      
+
+        p{
+            font-size: 1rem;
+
+        }
+        h3{
+            font-size: 3rem;
+        }
+        h1{
+            font-size: 2rem;
+
+
+            span::before {
+                content: "Frontend Developer";
+                animation: animate infinite 6s;
+                color: blue;
+            }
+          
+           
+        }
+    }
+  
+
+    .image{
+        display: block;
+        position: relative;
+        margin: 0 5rem 0;
+                img{
+                    height: 16rem;
+                    width: 16rem;
+                    border-radius: 50%;
+                    object-position: top;
+                    object-fit: cover;
+                    border: 0.3rem solid #59aabc;
+                }
+    }
+    
+}
+
+}
+
+@keyframes animate {
+          
+    0% {
+        content: "Frontend Developer";
+    }
+
+    50% {
+        content: "Aspiring Blockchain developer";
+    }
+
+    75% {
+        content: "Web Developer";
+    }
+}

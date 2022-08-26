@@ -1,0 +1,105 @@
+:root {
+  --bgcolor: #02021a;
+  --bordercolor: #00c6cd;
+  --ashcolor: #B2BEB5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: cell;
+  background-color: var(--ashcolor) !important;
+  font-family: "Poppins", sans-serif;
+}
+body .navbar {
+  background-color: white;
+  border-bottom: 0.12rem solid black;
+}
+body .navbar .navbar-brand {
+  color: var(--bgcolor);
+}
+body .navbar .btn-secondary {
+  color: #fff;
+  border-color: #fff;
+  background-color: var(--ashcolor);
+}
+body .navbar .btn-secondary:hover {
+  border-color: rgb(109, 194, 255);
+  background-color: var(--bgcolor);
+  box-shadow: 5px 3px 10px rgba(2, 33, 61, 0.59);
+}
+body .navbar .nav-link {
+  color: black;
+}
+body .navbar .nav-link:hover {
+  color: var(--ashcolor);
+  border: 0.1rem solid #000;
+  box-shadow: 5px 3px 10px rgba(2, 33, 61, 0.59);
+}
+body .navbar .active {
+  color: var(--bordercolor);
+}
+body .load {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 8rem 9rem 8rem 6rem;
+}
+body .load .profile p {
+  font-size: 1rem;
+}
+body .load .profile h3 {
+  font-size: 3rem;
+}
+body .load .profile h1 {
+  font-size: 2rem;
+}
+body .load .profile h1 span::before {
+  content: "Frontend Developer";
+  -webkit-animation: animate infinite 6s;
+          animation: animate infinite 6s;
+  color: blue;
+}
+body .load .image {
+  display: block;
+  position: relative;
+  margin: 0 5rem 0;
+}
+body .load .image img {
+  height: 16rem;
+  width: 16rem;
+  border-radius: 50%;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0.3rem solid #59aabc;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    content: "Frontend Developer";
+  }
+  50% {
+    content: "Aspiring Blockchain developer";
+  }
+  75% {
+    content: "Web Developer";
+  }
+}
+
+@keyframes animate {
+  0% {
+    content: "Frontend Developer";
+  }
+  50% {
+    content: "Aspiring Blockchain developer";
+  }
+  75% {
+    content: "Web Developer";
+  }
+}/*# sourceMappingURL=Style.css.map */
