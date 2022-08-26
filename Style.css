@@ -12,20 +12,20 @@
 
 body {
   cursor: cell;
-  background-color: var(--ashcolor) !important;
+  background-color: var(--bgcolor) !important;
   font-family: "Poppins", sans-serif;
 }
 body .navbar {
-  background-color: white;
+  background-color: var(--bgcolor);
   border-bottom: 0.12rem solid black;
 }
 body .navbar .navbar-brand {
-  color: var(--bgcolor);
+  color: var(--bordercolor);
 }
 body .navbar .btn-secondary {
-  color: #fff;
-  border-color: #fff;
-  background-color: var(--ashcolor);
+  color: var(--bordercolor);
+  border-color: var(--ashcolor);
+  background-color: var(--bgcolor);
 }
 body .navbar .btn-secondary:hover {
   border-color: rgb(109, 194, 255);
@@ -33,7 +33,7 @@ body .navbar .btn-secondary:hover {
   box-shadow: 5px 3px 10px rgba(2, 33, 61, 0.59);
 }
 body .navbar .nav-link {
-  color: black;
+  color: #fff;
 }
 body .navbar .nav-link:hover {
   color: var(--ashcolor);
@@ -47,7 +47,9 @@ body .load {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin: 8rem 9rem 8rem 6rem;
+  color: var(--bordercolor);
 }
 body .load .profile p {
   font-size: 1rem;
@@ -62,7 +64,7 @@ body .load .profile h1 span::before {
   content: "Frontend Developer";
   -webkit-animation: animate infinite 6s;
           animation: animate infinite 6s;
-  color: blue;
+  color: white;
 }
 body .load .image {
   display: block;
@@ -77,7 +79,7 @@ body .load .image img {
      object-position: top;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 0.3rem solid #59aabc;
+  border: 0.3rem solid var(--bordercolor);
 }
 
 @-webkit-keyframes animate {

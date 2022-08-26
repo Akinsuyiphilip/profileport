@@ -13,20 +13,20 @@
 
 body{
     cursor:cell;
-    background-color: var(--ashcolor) !important;
+    background-color: var(--bgcolor) !important;
     font-family: 'Poppins', sans-serif;
 
     .navbar{
-        background-color: white;
+        background-color: var(--bgcolor);
         border-bottom: .12rem solid black;
         .navbar-brand{
-            color: var(--bgcolor);
+            color: var(--bordercolor);
            
         }
         .btn-secondary{
-            color: #fff;
-            border-color: #fff;
-            background-color: var(--ashcolor);
+            color: var(--bordercolor);
+            border-color: var(--ashcolor);
+            background-color: var(--bgcolor);
             &:hover{
                 border-color: rgb(109, 194, 255);
                 background-color: var(--bgcolor);
@@ -35,7 +35,7 @@ body{
 
         }
         .nav-link{
-            color: black;
+            color: #fff;
 
             &:hover{
                 color: var(--ashcolor);
@@ -54,7 +54,9 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 8rem 9rem 8rem 6rem;
+    color: var(--bordercolor);
     .profile{
       
 
@@ -72,7 +74,7 @@ body{
             span::before {
                 content: "Frontend Developer";
                 animation: animate infinite 6s;
-                color: blue;
+                color: white;
             }
           
            
@@ -90,7 +92,7 @@ body{
                     border-radius: 50%;
                     object-position: top;
                     object-fit: cover;
-                    border: 0.3rem solid #59aabc;
+                    border: 0.3rem solid var(--bordercolor);
                 }
     }
     
